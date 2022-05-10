@@ -1,0 +1,16 @@
+mytheme.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2.x
+mytheme.desktop:
+  label: desktop
+  mediaQuery: 'all and (min-width: 574px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.2x
+    - 2x

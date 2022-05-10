@@ -1,0 +1,16 @@
+name: MyTheme
+type: theme
+base theme: stable
+description: My first Drupal 8 theme.
+core: 8.x
+libraries:
+  - mytheme/global-styling
+regions:
+  header: Header
+  content: Content  # Этот регион обязателен
+  recomendations: 'Recomendations'
+  sidebar_first: 'Sidebar first' # Не забываем добавить кавычки
+  sidebar_second: 'Sidebar second' # Не забываем добавить кавычки
+  footer: Footer
+  mainbanner: Mainbanner
+  formpopup: 'Form popup'

@@ -1,0 +1,21 @@
+favorites.cart_page:
+  path: '/favorites/cart'
+  defaults: 
+    _controller: '\Drupal\favorites\Controller\FavoritesController::rendernodes'
+    _title: 'Ваши избранные товары'
+  requirements:
+    _permission: 'access content'
+favorites.simple:
+  path: '/favorites/simple'
+  defaults:
+    _controller: '\Drupal\favorites\Controller\PageExampleController::simple'
+    _title: 'Simple - no arguments'
+  requirements:
+    _permission: 'access content'
+favorites.add_to_cart_link:
+  path: '/favorites/add_to_cart/{nid}'
+  defaults: 
+    _controller: '\Drupal\favorites\Controller\FavoritesController::addtocart'
+    _title: 'addtocart'
+  requirements:
+    _permission: 'access content'

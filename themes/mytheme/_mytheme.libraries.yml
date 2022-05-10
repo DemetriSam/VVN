@@ -1,0 +1,12 @@
+global-styling:
+  css:
+    css/style.min.css: {}
+    css/print.css: { media: print }
+  js:
+    js/custom.js: {}
+    js/app.js: {}
+    js/app.min.js: {}
+    js/vendors.js: {}
+    js/vendors.min.js: {}
+  dependencies:
+    - core/jquery

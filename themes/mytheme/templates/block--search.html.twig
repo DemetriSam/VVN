@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+<nav class="navbar" id="navbar-top">
+  <div class="header__container _container">
+    <section class="row">
+      <div class="contacts_in_header">
+        <div id="header_phone_number" class="_icon-phone">+7 (495) 729 96 33</div>
+        <div class="_icon-mail">info@dizanarium.ru</div>
+
+        <div id="header_address" class="_icon-pin">г. Москва, Большая Черемушкинская, 34, офис 309.3</div>
+      </div>
+      <div{{ attributes.addClass('header__search').removeClass('contextual-region') }}>
+        <div class="search-form">
+          <button type="button" class="search-form__icon _icon-Search"></button>
+          <form action="/ru/search/node" method="get" id="search-block-form" accept-charset="UTF-8" class="search-form__item">
+            <button type="submit" class="search-form__btn _icon-Search"></button>
+            <input id="search_input" autocomplete="off" type="text" name="form[]" data-value="" class="search-form__input">
+          </form>
+        </div>
+      </div>
+        <div class="call_designer_div heart_div">
+          <a href="/favorites/cart" class="call_designer button_light hide-mxw-md3">Избранное </a>
+          <div class="red_heart_notification"><a href="/favorites/cart"><span>0</span></a></div>
+        </div>        
+
+        <div id="designer_button_header" class="call_designer_div">
+          <a href="#designer-form-region" class="call_designer button">Вызвать дизайнера на замер</a>
+        </div>
+    </section>
+  </div>
+</nav>

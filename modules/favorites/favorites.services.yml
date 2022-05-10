@@ -1,0 +1,13 @@
+services:
+  first_object: 
+    class: \Drupal\favorites\FirstObject
+  the_cookie:
+    class: \Drupal\favorites\TheCookie
+    arguments:
+      - '@request_stack'
+    tags:
+      - { name: 'event_subscriber' }
+  the_cart: 
+    class: \Drupal\favorites\TheCart
+    tags:
+      - { name: 'event_subscriber' }

@@ -1,0 +1,9 @@
+{# [module]/templates/my-template.html.twig #}
+<h1 class="h1">Избранное</h1>
+<div class="rec-block__nodes nodes">
+    {% for node in nodes %}
+        <div class="nodes__cell views-row">{{ node }}</div>
+    {% else %}
+        <p>Пока вы ничего не добавили в избранное</em></p>
+    {% endfor %}
+</div>

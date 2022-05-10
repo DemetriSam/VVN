@@ -1,0 +1,5 @@
+@@include('files/regular.js', {})
+@@include('files/dynamic-header.js', {})
+@@include('files/functions.js', {})
+@@include('files/script.js', {})
+@@include('files/swiperInit.js', {})

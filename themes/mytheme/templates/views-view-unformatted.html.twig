@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+<div class="rec-block">
+  <div class="rec-block__title">
+    <div class="rec-block__label">
+      {{ title }}
+    </div>
+    <div class="rec-block__decorline"><img src="/themes/mytheme/img/icons/DecorLine.svg" alt=""></div>
+  </div>
+{% endif %}
+<div class="rec-block__nodes nodes">
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{- row.content -}}
+  </div>
+{% endfor %}
+</div>
+
+{% if title %}
+</div>
+{% endif %}

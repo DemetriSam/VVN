@@ -1,0 +1,6 @@
+favorites.library:
+  version: 1.x
+  js:
+    js/favorites.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,10 @@
+/* Стили специфичные для типа материала "Цвет" */
+
+.layout-content > div {
+    display: flex;
+}
+
+#block-mytheme-local-tasks {
+    position: absolute;
+    right: 1px;
+}

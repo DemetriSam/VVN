@@ -1,0 +1,4 @@
+name: Favorites
+type: module
+description: Simple cart for favorite nodes.
+core_version_requirement: ^8.8 || ^9

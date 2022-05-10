@@ -1,0 +1,183 @@
+.menu__item:before {
+  content: url("/themes/mytheme/img/icons/Rectangle.svg");
+}
+
+.menu__item a {
+  color: black;
+}
+
+footer .menu__item a {
+  color: white;
+}
+
+.red_heart_notification {
+  background-image: url(/themes/mytheme/img/icons/red_heart.svg);
+  background-size: 100% 100%;
+  height: 27px;
+  position: relative;
+}
+
+
+.red_heart_notification span {
+  bottom: 16px;
+}
+
+.red_heart_notification {
+  bottom: -4px;
+}
+
+@media (max-width: 981.98px) {
+  .red_heart_notification {
+    top: 10px;
+
+  }
+
+  .red_heart_notification span {
+  bottom: 12px;
+  }
+
+  .menu__item a {
+    color: white;
+  }
+
+  .search-form__icon {
+    top: 3px;
+  }
+
+
+}
+
+#block-mytheme-powered {
+  display: none;
+}
+
+.visually-hidden {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.dialog-off-canvas-main-canvas {
+  height: 100%;
+}
+
+
+.product-card__items .product-card__gallery {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.product-card__items .product-card__gallery img {
+  width: 100%;
+}
+
+.product-card__items .product-card__item_pc-buttons {
+  grid-row-start: 4;
+}
+
+.product-card__items .product-card__item_description {
+  grid-row-start: 5;
+}
+
+.region-content-cvet {
+  display: flex;
+}
+
+.product-card__items .composition::before {
+  content: "";
+  background-image: url(/themes/mytheme/img/specs/composition.webp) !important;
+  background-size: cover;
+  
+}
+
+.product-card__items .width::before {
+  content: "";
+  background-image: url(/themes/mytheme/img/specs/width.webp) !important;
+  background-size: cover;
+  
+}
+
+.product-card__items .height::before {
+  content: "";
+  background-image: url(/themes/mytheme/img/specs/height.webp) !important;
+  background-size: cover;
+  
+}
+
+.product-card__items .price::before {
+  content: "";
+  background-image: url(/themes/mytheme/img/specs/price.webp) !important;
+  background-size: cover;
+  
+}
+
+#block-views-block-thumbnails-for-gallery-block-1 {
+  cursor: pointer;
+}
+
+.product-card__items .product-card__item_gallery img {
+  max-width: 100%;
+}
+
+
+.sharing__icons {
+  background-image: url(/themes/mytheme/img/gallery/union.svg);
+}
+
+/* Скрываем в ненужные элементы ноды  */
+
+
+/* Скрываем в ненужные элементы ноды в контексте рекомендательного блока.  */
+
+.nodes__item .gallery__header, .nodes__item .specs__subitem_name, .nodes__item .specs__subitem_wtf, .nodes__item .specs__subitem_filler, .nodes__item .gallery-thumbs {
+  display: none;
+}
+
+.rec-block__title a {
+  color: #2f3339;
+}
+
+#block-mytheme-page-title {
+  text-align: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #112279;
+}
+
+.main-banner  {
+  margin-top: -50px;
+}
+
+.design-form label {
+  display: block;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #2f3339;
+}
+
+.design-form__agree label {
+  display: inline;
+  text-transform: none;
+  font-size: 12px;
+}
+
+.design-form__button {
+  width: 100%;
+}
+
+.design-form #edit-flexbox {
+  margin: 0;
+}
+
+.popup {
+  z-index: 1000;
+}
+
+.popup .main-banner__form {
+  height: 435px;
+}
